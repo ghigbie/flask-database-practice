@@ -20,7 +20,7 @@ class Puppy(db.Model):
     fur = db.Column(db.Text)
     sex = db.Column(db.Text)
 
-    def __init__(self,name,age): #initiates the object
+    def __init__(self, name, age, fur, sex): #initiates the object
         self.name = name
         self.age = age
 
