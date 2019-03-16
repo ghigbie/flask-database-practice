@@ -11,7 +11,7 @@ title = "Flask with Databases"
 
 @app.route('/')
 def index():
-    return render_template('index.html', title=title)
+    return render_template('index.html', title=title, basedir=basedir)
 
 @app.route('/about')
 def about():
