@@ -23,9 +23,11 @@ class Puppy(db.Model):
     def __init__(self, name, age, fur, sex): #initiates the object
         self.name = name
         self.age = age
-
+        self.fur = fur
+        self.sex = sex
+        
     def __repr__(self): #Provides a string representation of the object
-        return f"Puppy with a name of {self.name} is {self.age} year(s) old. His/Her fur color is: {self.color}."
+        return f"Puppy with a name of {self.name} is {self.age} year(s) old. His/Her fur color is: {self.fur}."
 
 title = "Flask with Databases"
 
