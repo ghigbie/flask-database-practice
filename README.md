@@ -1,3 +1,3 @@
 # Flask Database Practice 1
 
-This repo is dedicated to practice with Flask and Databases.
+This repo is dedicated to practice with Flask and Databases and uses SQLAlchemy.
