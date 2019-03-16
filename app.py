@@ -13,10 +13,10 @@ title = "Flask with Databases"
 def index():
     return render_template('index.html', title=title)
 
-@app.route('about')
+@app.route('/about')
 def about():
     return render_template('about.html', title=title)
-    
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('notfound.html', title=title, e=e)
