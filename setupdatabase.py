@@ -9,7 +9,9 @@ print(sam.id)
 print(frank.id)
 print(cutie.id)
 
-db.session.add([sam, frank, cutie])
+db.session.add(sam)
+db.session.add(frank)
+db.session.add(cutie)
 db.session.commit()
 
 print(sam.id)

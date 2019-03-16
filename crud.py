@@ -24,6 +24,10 @@ first_puppy.age = 10
 db.session.add(first_puppy)
 db.session.commit()
 
+rufus = Puppy.query.filter_by(name='Rufus')
+rufus.fur = 'orange'
+db.session.commit()
+
 #delete
 second_puppy = Puppy.query.get(2)
 db.session.delete(second_puppy)
